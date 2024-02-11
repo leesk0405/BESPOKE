@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScrollTrigger Pin 예제</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 200vh;
+        }
+
+        .parent {
+            width: 100%;
+            height: 100vh;
+            background-color: #f0f0f0;
+            position: relative;
+        }
+
+        .child {
+            width: 50%;
+            height: 50vh;
+            background-color: #3498db;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .pin-wrapper {
+            position: relative;
+        }
+
+        .pin-child {
+            width: 100%;
+            height: 100%;
+            background-color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+        <div class="child">
+            <!-- ScrollTrigger에 의해 pin될 자식 요소 -->
+        </div>
+    </div>
+
+    <!-- ScrollTrigger에 의해 pin될 요소를 감싸는 wrapper -->
+    <div class="pin-wrapper">
+        <div class="pin-child">
+            <!-- ScrollTrigger에 의해 pin된 자식 요소 -->
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.9.0/dist/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.to('.child', {
+            scrollTrigger: {
+                trigger: '.child', // 트리거를 .child로 변경
+                start: 'top top',
+                end: 'bottom top',
+                pin: true,
+                markers: true
+            }
+        });
+    </script>
+</body>
+</html>
