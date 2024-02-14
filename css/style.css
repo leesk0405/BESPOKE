@@ -1,3 +1,9 @@
+#wrapper{
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 header {
     height:68px;
     border-bottom: 1.6px solid #333;
