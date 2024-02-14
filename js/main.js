@@ -56,7 +56,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.to(".infi",{
   scrollTrigger:{
     trigger:".infi",
-    start:"top 10%",
+    start:"top 30%",
     endTrigger:".section1",
     end:"bottom 50%",
     pin: true,
@@ -67,7 +67,7 @@ gsap.to(".infi",{
 gsap.to(".cus",{
   scrollTrigger:{
     trigger:".cus",
-    start:"top 10%",
+    start:"top 30%",
     endTrigger:".section2",
     end:"bottom 40%",
     pin: true,
@@ -78,7 +78,7 @@ gsap.to(".cus",{
 gsap.to(".style",{
   scrollTrigger:{
     trigger:".style",
-    start:"top 10%",
+    start:"top 30%",
     endTrigger:".section3",
     end:"bottom 40%",
     pin: true,
@@ -143,3 +143,28 @@ $(window).scroll(function(){
     txt2.removeClass('anim-typewriter')
   }
 });
+$('footer .clause-links .drop').click(function(){
+  $(this).find('.droplist').toggleClass('active');
+  $(this).siblings().find('.droplist').removeClass('active');
+});
+
+
+  // let item1 = $('.section1')
+  // let scr = $(window).scrollTop();
+  $('.banner .item1, .banner .item4').click(function(){
+      $('html, body').stop().animate({
+      scrollTop: $('.section1').offset().top
+    }, 800,'easeOutQuad'); // Adjust the duration as needed
+  });    
+
+  $('.banner .item6').click(function(){
+    $('html, body').stop().animate({
+      scrollTop: $('.section2').offset().top
+    },1200,'easeOutQuad');
+  });
+
+  $('.banner .item2, .banner .item7').click(function(){
+    $('html, body').stop().animate({
+      scrollTop: $('.section3').offset().top
+    },1600,'easeOutQuad');
+  });
