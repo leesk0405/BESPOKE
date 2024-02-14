@@ -168,3 +168,9 @@ $('footer .clause-links .drop').click(function(){
       scrollTop: $('.section3').offset().top
     },1600,'easeOutQuad');
   });
+
+  $('.arrow0').click(function(){
+    $('html,body').stop().animate({
+      scrollTop:0
+    },500)
+  })
