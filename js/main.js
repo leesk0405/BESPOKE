@@ -77,7 +77,7 @@ gsap.to(".infi",{
     // endTrigger:".section1",
     // end:"bottom 50%",
     // pin: true,
-    markers:true,
+    // markers:true,
     scrub:1
   },
   alpha: 1,
