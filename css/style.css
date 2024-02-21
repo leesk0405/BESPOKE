@@ -114,7 +114,7 @@ header nav .nav_inner .gnb li .lnb {
     top:100%;
     left:50%;
     transform: translate(-50%,0);
-    text-wrap: nowrap;
+    white-space: nowrap;
 
     /* width: max-content;
     display: flex;
@@ -404,51 +404,72 @@ section {
 .section1 div:not(.infi), .section1 span {
     z-index: 10;
 }
-.section1 .infi {
+
+.infi,
+.cus,
+.style {
     position: absolute;
-    top:6%;
-    left:50%;
     /* z-index: -1; */
-    transform: translate(-50%,-50%);
+    /* transform: translate(-50%,-50%); */
     /* top:0; */
-    opacity: .13;
-    background: radial-gradient(circle, #ffffff 65%, #000000);
-    color: transparent;
-    background-clip: text;
+    color: #ffffff22;
+    /* background-clip: text; */
     /* text-fill-color: transparent; */
-    font-size: 11.25em;/*180*/
     text-align: center;
     font-weight: 900;
+    /* position: relative; */
+    opacity: 0;
+    transform: translateY(100%);
 }
+.infi::before,
+.cus::before,
+.style::before {
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    display: block;
+    background: radial-gradient(circle,  #00000000 ,#00000088);
+    width: 100%;
+    height: 100%;
+}
+.section1 .infi{
+    top:3%;
+    left:28%;
+    font-size: 11.25rem;/*180*/
+}
+.section1 .infi {}
+.section2 .cus {}
+.section3 .style {}
+
 .section1 .title {
-    font-size: 11.25em;
+    font-size: 11.25rem;
     margin-bottom: 132px;
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 .section1 .title .up {
     display: flex;
     justify-content: space-between;
 }
 .section1 .title .up span {
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 .section1 .title .up .line1 {
     position: relative;
     border-bottom: 1.4px solid #fff;
-    width: 0;
+    width: 100%;
     transition: width .4s;
 }
 .section1 .title .up .next{
-    opacity: 0;
-    transition: opacity .6s;
+    opacity: 1;
 }
 
-.section1 .title .up .line1.active {
+/* .section1 .title .up .line1.active {
     width: 100%;
 }
 .section1 .title .up .next.active {
     opacity: 1;
-}
+} */
 .section1 .title .down {
     display: flex;
     justify-content: space-between;
@@ -771,8 +792,8 @@ section {
 }
 /* section1 */
 .section2 {
-    /* width: 1440px; */
-    /* margin: 0 auto; */
+    max-width: 1440px;
+    margin: 0 auto;
     position: relative;
 }
 .section2 div:not(.cus), .section2 span  {
@@ -780,25 +801,17 @@ section {
 }
 
 .section2 .cus {
-    position: absolute;
-    top:8%;
-    left:44%;
+    top:10%;
+    left:48%;
     /* z-index: -1; */
-    /* transform: translate(-50%,-50%); */
     /* top:0; */
-    opacity: .13;
-    background: radial-gradient(circle, #ffffff 60%, #000000);
-    color: transparent;
-    background-clip: text;
     /* text-fill-color: transparent; */
-    font-size: 10em;/**/
-    text-align: center;
-    font-weight: 900;
+    font-size: 8em;/**/
 }
 .section2 .title {
-    font-size: 11.25em;
+    font-size: 11.25rem;
     margin-bottom: 132px;
-    text-wrap: nowrap;
+    white-space: nowrap;
    
 }
 .section2 .title .text {
@@ -811,24 +824,23 @@ section {
     justify-content: space-between;
 }
 .section2 .title .up span {
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 .section2 .title .up .next {
-    opacity: 0;
-    transition: opacity .6s;
+    opacity: 1;
 }
 .section2 .title .up .line4 {
     position: relative;
     border-bottom: 1.4px solid #fff;
-    width: 0;
+    width: 100%;
     transition: width .4s;
 }
-.section2 .title .up .line4.active {
+/* .section2 .title .up .line4.active {
     width: 100%;
 }
 .section2 .title .up .next.active {
     opacity: 1;
-}
+} */
 .section2 .title .down {
     display: flex;
     justify-content: space-between;
@@ -978,7 +990,7 @@ section {
 }
 /* section2 */
 .section3 {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     position: relative;
 }
@@ -993,44 +1005,36 @@ section {
     /* z-index: -1; */
     /* transform: translate(-50%,-50%); */
     /* top:0; */
-    opacity: .13;
-    background: radial-gradient(circle, #ffffff 60%, #000000);
-    color: transparent;
-    background-clip: text;
     /* text-fill-color: transparent; */
-    font-size: 7.5em;/*120*/
-    text-align: center;
-    font-weight: 900;
+    font-size: 7em;/*120*/
 }
 .section3 .title {
-    font-size: 11.25em;
+    font-size: 11.25rem;
     margin-bottom: 132px;
-    text-wrap: nowrap;
-    margin-bottom: 132px;
+    white-space: nowrap;
 }
 .section3 .title .up {
     display: flex;
     justify-content: space-between;
 }
 .section3 .title .up span {
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 .section3 .title .up .next {
-    opacity: 0;
-    transition: opacity .6s;
+    opacity: 1;
 }
 .section3 .title .up .line5 {
     position: relative;
     border-bottom: 1.4px solid #fff;
-    width: 0;
+    width: 100%;
     transition: width .4s;
 }
-.section3 .title .up .line5.active {
+/* .section3 .title .up .line5.active {
     width: 100%;
 }
 .section3 .title .up .next.active {
     opacity: 1;
-}
+} */
 .section3 .title .down {
     display: flex;
     justify-content: space-between;
@@ -1105,7 +1109,7 @@ section {
     font-size: 8rem;
     color: #444;
     font-weight: 800;
-    text-wrap: nowrap;
+    white-space: nowrap;
     /* opacity: 1; */
     margin-left: -10%;
     line-height: 1.8;
@@ -1185,7 +1189,7 @@ section {
 }
 .section4 .title {
     font-size: 116px;
-    text-wrap: nowrap;
+    white-space: nowrap;
     margin-bottom: 12px;
 }
 .section4 .title span {
@@ -1643,7 +1647,7 @@ footer .footer-content .btnBottomGroup .clause-links .drop .droplist{
     border-radius: 10px;
     display: block;
     height: auto;
-    text-wrap: nowrap;
+    white-space: nowrap;
     /* transition: all 1s ease; */
     box-sizing: border-box;
     overflow: hidden;

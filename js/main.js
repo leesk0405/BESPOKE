@@ -53,38 +53,60 @@ $(window).scroll(function(){
 
 gsap.registerPlugin(ScrollTrigger);
 
+// gsap.to(".글자상자", {
+//   scrollTrigger: {
+//     trigger : ".글자상자",
+//     start: "top 50%",
+//     end :  "bottom 50%",
+//   },
+//   alpha: 1,
+//   y : 0
+// });
+/*
+  .글자상자{
+    transform: translateY(100%);
+    opacity: 0;
+  }
+*/
+
 gsap.to(".infi",{
   scrollTrigger:{
     trigger:".infi",
     start:"top 30%",
-    endTrigger:".section1",
+    // endTrigger:".section1",
     end:"bottom 50%",
     pin: true,
-    // markers:fasle,
+    // markers:true,
     scrub:1
   },
+  alpha: 1,
+  y : 0
 });
 gsap.to(".cus",{
   scrollTrigger:{
     trigger:".cus",
     start:"top 30%",
-    endTrigger:".section2",
+    // endTrigger:".section2",
     end:"bottom 40%",
-    pin: true,
+    // pin: true,
     // markers:fasle,
     scrub:1
   },
+  alpha: 1,
+  y : 0
 });
 gsap.to(".style",{
   scrollTrigger:{
     trigger:".style",
     start:"top 30%",
-    endTrigger:".section3",
+    // endTrigger:".section3",
     end:"bottom 40%",
-    pin: true,
+    // pin: true,
     // markers:fasle,
     scrub:1
   },
+  alpha: 1,
+  y : 0
 });
 
 let swiper = new Swiper('.conLun', {
