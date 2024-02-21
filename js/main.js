@@ -72,11 +72,12 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.to(".infi",{
   scrollTrigger:{
     trigger:".infi",
-    end:"top 40%",
+    // start:"top 50%",
+    end:"top 50%",
     // endTrigger:".section1",
     // end:"bottom 50%",
     // pin: true,
-    // markers:true,
+    markers:true,
     scrub:1
   },
   alpha: 1,
