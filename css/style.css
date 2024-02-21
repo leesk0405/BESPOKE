@@ -410,7 +410,9 @@ section {
 .section2 .cus {}
 .section3 .style {}
 
-.section1 .title {
+.section1 .title,
+.section2 .title,
+.section3 .title {
     font-size: 11.25rem;
     margin-bottom: 132px;
     white-space: nowrap;
@@ -423,18 +425,20 @@ section {
     white-space: nowrap;
 }
 .section1 .title .up .line,
-.section2 .title .up .line
+.section2 .title .up .line,
 .section3 .title .up .line {
   position: relative;
   border-bottom: 1px solid #fff;
   width: 100%;
 }
-section .title .up .line .infi {
+.section1 .title .up .line .infi, 
+.section2 .title .up .line .cus,
+.section3 .title .up .line .style {
     /* position: absolute;
     top:0%;
     left: 10%; */
     /* transform: translate(-50%,-50%); */
-    color: #ffffff22;
+    color: #ffffff33;
     /* text-align: center; */
     font-weight: 900;
     /* position: relative; */
@@ -443,9 +447,6 @@ section .title .up .line .infi {
     display: block;
     text-align: center;
 }
-.section1 .title .up .line .infi {}
-.section2 .title .up .line .cus {}
-.section3 .title .up .line .style {}
 
 .infi::before,
 .cus::before,
@@ -455,11 +456,17 @@ section .title .up .line .infi {
     top:0;
     left:0;
     display: block;
-    background: radial-gradient(circle,  #00000000 ,#00000011);
+    background: radial-gradient(circle,  #00000000 ,#000000aa);
     width: 100%;
     height: 100%;
 }
 .section1 .infi{
+    font-size: 11.25rem;/*180*/
+}
+.section2 .cus{
+    font-size: 10rem;/*180*/
+}
+.section3 .style{
     font-size: 11.25rem;/*180*/
 }
 .section1 .title .down,
@@ -801,57 +808,13 @@ section .title .down .bold {
 .section2 div:not(.cus), .section2 span  {
     z-index: 10;
 }
-
-.section2 .cus {
-    top:10%;
-    left:48%;
-    /* z-index: -1; */
-    /* top:0; */
-    /* text-fill-color: transparent; */
-    font-size: 8rem;/**/
-}
-.section2 .title {
-    font-size: 11.25rem;
-    margin-bottom: 132px;
-    white-space: nowrap;
-   
-}
-.section2 .title .text {
- max-width: 1440px;
-    margin: 0 auto;
-    color: #ddd;
-}
-.section2 .title .up {
-    display: flex;
-    justify-content: space-between;
-}
-.section2 .title .up span {
-  white-space: nowrap;
-}
-.section2 .title .up .next {
-    opacity: 1;
-}
-.section2 .title .up .line4 {
-    position: relative;
-    border-bottom: 1.4px solid #fff;
-    width: 100%;
-    transition: width .4s;
-}
 /* .section2 .title .up .line4.active {
     width: 100%;
 }
 .section2 .title .up .next.active {
     opacity: 1;
 } */
-.section2 .title .down {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 66px;
-}
-.section2 .title .down .bold {
-    font-weight: 800;
-    color: #fff;
-}
+
 .section2 .title .arrow2 {
     display: flex;
     margin: 0 auto;
@@ -999,52 +962,6 @@ section .title .down .bold {
 .section3 div:not(.style), .section3 span  {
     z-index: 10;
 }
-
-.section3 .style {
-    position: absolute;
-    top:6.5%;
-    left:23%;
-    /* z-index: -1; */
-    /* transform: translate(-50%,-50%); */
-    /* top:0; */
-    /* text-fill-color: transparent; */
-    font-size:11.25rem;/*120*/
-}
-.section3 .title {
-    font-size: 11.25rem;
-    margin-bottom: 132px;
-    white-space: nowrap;
-}
-.section3 .title .up {
-    display: flex;
-    justify-content: space-between;
-}
-.section3 .title .up span {
-  white-space: nowrap;
-}
-.section3 .title .up .next {
-    opacity: 1;
-}
-.section3 .title .up .line5 {
-    position: relative;
-    border-bottom: 1.4px solid #fff;
-    width: 100%;
-    transition: width .4s;
-}
-/* .section3 .title .up .line5.active {
-    width: 100%;
-}
-.section3 .title .up .next.active {
-    opacity: 1;
-} */
-.section3 .title .down {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 66px;
-}
-.section3 .title .down .bold {
-    font-weight: 800;
-}
 .section3 .title .arrow5 {
     display: flex;
     align-items: center;
@@ -1109,7 +1026,8 @@ section .title .down .bold {
 }
 .section3 .txt_box .para{
     font-size: 8rem;
-    color: #444;
+    color: #fff;
+    opacity: .23;
     font-weight: 800;
     white-space: nowrap;
     /* opacity: 1; */

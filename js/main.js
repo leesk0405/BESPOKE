@@ -86,7 +86,7 @@ gsap.to(".infi",{
 gsap.to(".cus",{
   scrollTrigger:{
     trigger:".cus",
-    end:"top 40%",
+    end:"top 50%",
     // endTrigger:".section2",
     // pin: true,
     // markers:fasle,
@@ -99,7 +99,7 @@ gsap.to(".style",{
   scrollTrigger:{
     trigger:".style",
     // endTrigger:".section3",
-    end:"top 40%",
+    end:"top 50%",
     // pin: true,
     // markers:fasle,
     scrub:1
