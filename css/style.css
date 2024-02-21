@@ -806,7 +806,7 @@ section {
     /* z-index: -1; */
     /* top:0; */
     /* text-fill-color: transparent; */
-    font-size: 8em;/**/
+    font-size: 8rem;/**/
 }
 .section2 .title {
     font-size: 11.25rem;
@@ -1006,7 +1006,7 @@ section {
     /* transform: translate(-50%,-50%); */
     /* top:0; */
     /* text-fill-color: transparent; */
-    font-size: 7em;/*120*/
+    font-size:11.25rem;/*120*/
 }
 .section3 .title {
     font-size: 11.25rem;
@@ -1468,6 +1468,7 @@ footer {
     color: #fff;
     font-size: 14px;
     box-sizing: border-box;
+    white-space: nowrap;
 }
 footer .footer-content {
     border-top: 1px solid #333;

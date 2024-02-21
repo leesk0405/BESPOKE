@@ -72,10 +72,10 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.to(".infi",{
   scrollTrigger:{
     trigger:".infi",
-    start:"top 30%",
+    end:"top 40%",
     // endTrigger:".section1",
-    end:"bottom 50%",
-    pin: true,
+    // end:"bottom 50%",
+    // pin: true,
     // markers:true,
     scrub:1
   },
@@ -85,9 +85,8 @@ gsap.to(".infi",{
 gsap.to(".cus",{
   scrollTrigger:{
     trigger:".cus",
-    start:"top 30%",
+    end:"top 40%",
     // endTrigger:".section2",
-    end:"bottom 40%",
     // pin: true,
     // markers:fasle,
     scrub:1
@@ -98,9 +97,8 @@ gsap.to(".cus",{
 gsap.to(".style",{
   scrollTrigger:{
     trigger:".style",
-    start:"top 30%",
     // endTrigger:".section3",
-    end:"bottom 40%",
+    end:"top 40%",
     // pin: true,
     // markers:fasle,
     scrub:1
