@@ -940,6 +940,7 @@ section .title .down .bold {
     font-size: 60px;
     margin-bottom: 12px;
     white-space: nowrap;
+    
 }
 .section2 .con .conLun .swiper-wrapper .swiper-slide .txt .para{
     font-size: 16px;
@@ -1150,16 +1151,19 @@ section .title .down .bold {
 }
 .section4 .box a  .list li {
     margin-right: 24px;
+   
 }
 .section4 .box a .list li:first-child {
     width: 52px;
     height: 52px;
     border-radius: 50%;
+    aspect-ratio: 1/1;
 }
 .section4 .box a .item .list li:nth-child(2) {
     width: 52px;
     height: 52px;
     border-radius: 50%;
+    aspect-ratio: 1/1;
 } 
 .section4 .item1 a .list li:first-child {
     background-color: #ecebe7;
@@ -1196,6 +1200,7 @@ section .title .down .bold {
     width: 32px;
     height: 32px;
     background-color: #f6f3e6;
+    aspect-ratio: 1/1;
     border-radius: 50%;
 }
 .section4 .item5 a .item .list li:first-child {
@@ -1213,6 +1218,7 @@ section .title .down .bold {
     width: 32px;
     height: 32px;
     background-color: #0a727b;
+    aspect-ratio: 1/1;
     border-radius: 50%;
 }
 .section4 .box a .text {
